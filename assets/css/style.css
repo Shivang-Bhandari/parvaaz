@@ -3337,7 +3337,6 @@ button.btn.btn-block {
   }
   .btn,
   .header .buy-btn {
-    display: block;
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
