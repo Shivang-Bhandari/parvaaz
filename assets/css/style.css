@@ -5570,7 +5570,6 @@ button[type="submit"] .loading {
   display: inline-block;
   width: 60px;
   height: 60px;
-  font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -5578,7 +5577,6 @@ button[type="submit"] .loading {
   text-align: center;
   line-height: 59px;
   color: #ffffff;
-  content: "\f002";
   border-radius: 50%;
   opacity: 0;
   z-index: 2;
