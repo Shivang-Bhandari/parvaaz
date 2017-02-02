@@ -762,7 +762,7 @@ Ventcamp = {
                 $countdown = $('.countdown');
 
                 // count down 10 days from today
-                futureDate.setDate( futureDate.getDate() + 10 );
+                futureDate.setDate( futureDate.getDate() + 25);
                 // or set specific date in the future
                 // futureDate = new Date(2014, 7, 26);
 
