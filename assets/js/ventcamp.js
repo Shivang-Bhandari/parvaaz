@@ -758,11 +758,11 @@ Ventcamp = {
     countdownInit: function () {
         if ( $('.countdown').length ) {
             if ( typeof $.fn.countdown == 'function' ) {
-                var futureDate = new Date();
+                var futureDate = new Date(2017, 1, 27);
                 $countdown = $('.countdown');
 
                 // count down 10 days from today
-                futureDate.setDate( futureDate.getDate() + 25);
+                // futureDate.setDate( futureDate.getDate() + 25);
                 // or set specific date in the future
                 // futureDate = new Date(2014, 7, 26);
 

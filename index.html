@@ -34,7 +34,7 @@
 
 		<div class="heading-block centered-block align-center">
 			<div class="container">
-				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>27-28 FEB <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>UBS, Ludhiana</h5>
+				<h5 class="heading-alt" style="margin-bottom: 8px;"><span class="fa fa-calendar-o base-clr-txt"></span>27-28 FEB <span class="fa fa-map-marker base-clr-txt" style="margin-left: 14px;"></span>UNIVERSITY BUSINESS SCHOOL, Ludhiana</h5>
 
 				<!-- Countdown start -->
 				<div class="row counters-wrapper countdown">
@@ -89,6 +89,7 @@
 				</div>
 
 				<h6 class="thin base-font">Where BollyWood Meets <strong>UBS Ludhiana</strong></h6>
+
 				<!-- <div class="btns-container">
 					<a href="#" class="btn btn-md" data-modal-link="email-ticket">GET TICKETS</a>
 					<a href="#" class="btn btn-outline btn-md" data-modal-link="0">VIDEO</a> -->
@@ -166,9 +167,14 @@
 		<div class="header-wrapper">
 			<div class="container">
 				<div class="col-sm-2 col-xs-12 navigation-header" style="padding:0;">
-					<a href="#" class="logo">
-						<img src="assets/img/logow.png" alt="VentCamp" style="max-height:90px;">
-					</a>
+					<section style="display:flex;">
+						<a href="#" class="logo">
+							<img src="assets/img/logow.png" alt="VentCamp" style="max-height:90px;">
+						</a>
+						<img src="../assets/img/ubs.png" alt="John Doe" style="max-height:90px;" class="img-responsive ">
+					</section>
+
+
 					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -206,8 +212,8 @@
 
 			<div class="col-sm-4">
 				<div class="speaker">
-					<h3 class="name">Best Manager</h3>
-					<p class="about">AFTER ONE LOOK THEY SAY”<br> I WANT TO SEE THE MANAGER</p>
+					<h3 class="name">Fashion Show</h3>
+					<p class="about">TURN <br>THE HEAT UP</p>
 					<button type="button" class="btn btn-ld" data-toggle="modal" data-target="#soloRegister">REGISTER</button>
 				</div>
 			</div>
@@ -243,7 +249,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="136">0</span>
+								<span class="count" data-from="0" data-to="150">0</span>
 
 								<p class="title">Teams</p>
 							</div>
@@ -255,7 +261,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="5">0</span>
+								<span class="count" data-from="0" data-to="2">0</span>
 
 								<p class="title">Days</p>
 							</div>
@@ -267,7 +273,7 @@
 					<div class="counter-block counter-block-no-border">
 						<div class="counter-box">
 							<div class="counter-content">
-								<span class="count" data-from="0" data-to="25">0</span>
+								<span class="count" data-from="0" data-to="16">0</span>
 
 								<p class="title">Events</p>
 							</div>
@@ -280,68 +286,7 @@
 		</div>
 	</section>
 
-  <script>
-
-        var colors = new Array(
-        [62,35,255],
-        [60,255,60],
-        [255,35,98],
-        [255,0,255],
-        [255,128,0]);
-
-        var step = 0;
-        //color table indices for:
-        // current color left
-        // next color left
-        // current color right
-        // next color right
-        var colorIndices = [0,1,2,3];
-
-        //transition speed
-        var gradientSpeed = 0.002;
-
-        function updateGradient()
-        {
-
-        if ( $===undefined ) return;
-
-        var c0_0 = colors[colorIndices[0]];
-        var c0_1 = colors[colorIndices[1]];
-        var c1_0 = colors[colorIndices[2]];
-        var c1_1 = colors[colorIndices[3]];
-
-        var istep = 1 - step;
-        var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-        var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-        var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-        var color1 = "rgb("+r1+","+g1+","+b1+")";
-
-        var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-        var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-        var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-        var color2 = "rgb("+r2+","+g2+","+b2+")";
-
-        $('#counters').css({
-        background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
-        background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
-
-        step += gradientSpeed;
-        if ( step >= 1 )
-        {
-        step %= 1;
-        colorIndices[0] = colorIndices[1];
-        colorIndices[2] = colorIndices[3];
-
-        //pick two new target color indices
-        //do not pick the same as the current one
-        colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-        colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-
-        }
-        }
-
-        setInterval(updateGradient,10);
-  </script>
+  
 	<section id="prices" class="section align-center">
 		<div class="container">
 			<span class="icon section-icon icon-shopping-04"></span>
@@ -457,7 +402,7 @@
 	<section id="sponsors" class="section align-center">
 		<div class="container">
 			<span class="icon section-icon icon-documents-bookmarks-12"></span>
-			<h3>General sponsors</h3>
+			<h3>Previous Year Sponsors</h3>
 			<p class="text-alt">companies that <span class="highlight">support</span> us</p>
 			<br/>
 			<br/>
@@ -509,6 +454,7 @@
 				<div class="col-md-6" style="display:flex;flex-wrap:flex;">
 					<ul class="footer-nav">
 						<li><img src="assets/img/footerlogo.png" alt="VentCamp" style="max-height:50px;float:right;"></li>
+						<li class="pull-right"><img src="../assets/img/ubs.png" alt="John Doe" style="max-height:50px;" class="img-responsive "></li>
 					</ul>
 				</div>
 
